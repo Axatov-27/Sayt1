@@ -1,0 +1,190 @@
+.my-soul-regular {
+  font-family: "My Soul", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.first{
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.555)), url(./1.webp);
+    background-size: cover; 
+}
+nav{
+    width: 100%;
+    margin: auto;
+    padding: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+}
+.logo{
+    width: 120px;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    gap: 35px
+}
+ul li a{
+    text-decoration: none;
+    color: white ;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    text-align: center;
+    color: white;
+}
+.content h1{
+    font-size: 60px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: bold;
+    line-height: 25px;
+}
+.first button{
+    width: 200px;
+    padding: 15px 10px;
+    border-radius: 25px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid orange;
+}
+.first button:hover{
+    background-color: orange;
+    transition: all .5s;
+}
+.second{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(0, 0, 0, 0.521),rgba(0, 0, 0, 0.452)),url(./2.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.second .card{
+    width: 300px;
+    height: 400px;
+    background:linear-gradient(rgba(0, 0, 0, 0.205),rgba(0, 0, 0, 0.212)),url(./3.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.second .card .card-main{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.second .card .card-main h1{
+    color: white;
+    position: relative;
+    top: 25px;
+}
+.second .card .card-main p{
+    color: white;
+    position: relative;
+    text-align: center;
+    top: 25px;
+    display: none;
+}
+.card:hover .card-main h1{
+    display: none;
+}
+.card:hover .card-main p{
+    display: block;
+}
+.card:hover{
+    background:linear-gradient(rgba(0, 0, 0, 0.473),rgba(0, 0, 0, 0.534)),url(./4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.card-footer{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-footer button{
+    margin: 0px 15px ;
+    width: 250px;
+    padding: 10px 0px;
+    background-color: transparent;
+    color: aliceblue;
+    border: 1px solid red;
+    border-radius: 25px;
+}
+.card-footer button:first-child:hover{
+    border-top-left-radius: 0px;
+    transition: all 0.5s;
+    background-color: red;
+}
+.card-footer button:last-child:hover{
+    border-top-right-radius: 0px;
+    transition: all 0.5s;
+    background-color: red;
+}
+@media (max-width:480px){
+    *{ 
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+       background: linear-gradient(rgba(0, 0, 0, 0.116), rgba(0, 0, 0, 0.116)), url(back.webp);
+    background-size: cover;  
+    }
+    .second{
+        background: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .second .card1{
+        transform: scale(0.5);
+        
+    }
+     .second .card2{
+        transform: scale(0.5);
+
+    }
+
+            
+    
+     .second .card3{
+        transform: scale(0.5);
+        }
+    .second .card4{
+        transform: scale(0.5);
+        }
+
+    ul{
+        gap: 12px;
+
+    }
+    ul li a{
+        font-size: 15px;
+    }
+    .logo{
+        width: 100px;
+
+    }
+    .content{
+        top: 260px;
+    }
+}
